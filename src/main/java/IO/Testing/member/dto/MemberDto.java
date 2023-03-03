@@ -10,8 +10,10 @@ import javax.validation.constraints.Email;
 import javax.validation.constraints.NotBlank;
 import javax.validation.constraints.Pattern;
 
+
 public class MemberDto {
     @Getter
+    @AllArgsConstructor
     public static class Post {
         @NotBlank
         @Email
