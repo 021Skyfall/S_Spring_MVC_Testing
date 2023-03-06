@@ -1,4 +1,4 @@
-package IO.Testing.slice;
+package IO.Testing.slice.API;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

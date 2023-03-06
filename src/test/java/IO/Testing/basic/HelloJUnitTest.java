@@ -3,17 +3,21 @@ package IO.Testing.basic;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.is;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class HelloJUnitTest {
 
-    @DisplayName("Hello JUnit Test")
     @Test
+    @DisplayName("Hello JUnit Test")
     public void assertionTest() {
-        String expected = "Hello JUnit";
 //        String actual = "Hello JUnit";
-        String actual = "hello";
+        String actual = "Hello, JUnit";
+        String expected = "Hello JUnit";
 
-        assertEquals(expected,actual);
+//        assertEquals(actual,expected);
+        assertThat(actual, is(equalTo(expected)));
     }
 }

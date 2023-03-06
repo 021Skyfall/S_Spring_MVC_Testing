@@ -1,4 +1,4 @@
-package IO.Testing.slice.controller.member;
+package IO.Testing.slice.API.controller.member;
 
 import IO.Testing.member.dto.MemberDto;
 import com.google.gson.Gson;
